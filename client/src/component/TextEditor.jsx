@@ -28,7 +28,7 @@ const TextEditor = () => {
 
   //Connecting to Socket
   useEffect(() => {
-    const s = io("http://localhost:5000");
+    const s = io("http://localhost:8000");
     setSocket(s);
     return () => {
       s.disconnect();
@@ -101,7 +101,7 @@ const TextEditor = () => {
   }, []);
 
   const handleLogout = async () => {
-    const response = await axios.post("http://localhost:5000/user/logout");
+    const response = await axios.post("http://localhost:8000/user/logout");
     if (response.status == 200) {
       alert("Logout Successfull");
     }

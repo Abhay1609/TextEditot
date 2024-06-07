@@ -4,6 +4,7 @@ const User = require('../models/user')
 const Authorization = require('../middlerware/Authorization');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const dot = require('dotenv').config();
 const SECRET_KEY = process.env.SECRET_KEY;
 
 

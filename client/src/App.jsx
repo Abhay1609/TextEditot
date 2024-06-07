@@ -20,12 +20,12 @@ function App() {
   const isAuthenticated = useSelector((state) => state.authReducer.isAuthenticated);
 
 
-  useEffect(() => {
-    const savedToken = Cookies.get('token');
-    if (savedToken) {
-      setToken(savedToken);
-    }
-  }, [])
+  // useEffect(() => {
+  //   const savedToken = Cookies.get('token');
+  //   if (savedToken) {
+  //     setToken(savedToken);
+  //   }
+  // }, [])
 
   return (
     <Router>

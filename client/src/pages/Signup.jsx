@@ -25,7 +25,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/user/register",
+        "http://localhost:8000/user/register",
         formData
       );
       if (response) {
